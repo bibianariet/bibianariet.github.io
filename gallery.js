@@ -1,4 +1,7 @@
 const filterButtons=[...document.querySelectorAll('[data-filter]')],galleryItems=[...document.querySelectorAll('.gallery-photo')];const selectedCategories=new Set();let visibleLimit=6;
+document.querySelectorAll('#gallery-prev,#gallery-next').forEach(button=>{
+ button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="'+(button.id==='gallery-prev'?'M15 5 8 12l7 7':'M9 5l7 7-7 7')+'"/></svg>';
+});
 function matches(photo){return !selectedCategories.size||photo.dataset.categories.split(' ').some(tag=>selectedCategories.has(tag))}
 function renderGallery(){const matching=galleryItems.filter(matches);galleryItems.forEach(photo=>photo.hidden=true);matching.slice(0,visibleLimit).forEach(photo=>photo.hidden=false);filterButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter==='all'?!selectedCategories.size:selectedCategories.has(button.dataset.filter))));document.querySelector('#gallery-more').hidden=matching.length<=visibleLimit;const pt=document.documentElement.lang==='pt-BR';document.querySelector('#gallery-count').textContent=pt?`${matching.length} fotos`:`${matching.length} photographs`}
 filterButtons.forEach(button=>button.addEventListener('click',()=>{const tag=button.dataset.filter;if(tag==='all')selectedCategories.clear();else if(selectedCategories.has(tag))selectedCategories.delete(tag);else selectedCategories.add(tag);visibleLimit=6;renderGallery()}));document.querySelector('#gallery-more').addEventListener('click',()=>{visibleLimit+=6;renderGallery()});

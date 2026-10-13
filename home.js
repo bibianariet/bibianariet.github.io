@@ -22,14 +22,27 @@ Object.assign(translations,{'Clown Sketches':'Sketches de Palhaçaria','Neighbor
 for(const [role,portuguese,year] of [['Neighbor & Father','Vizinha & Pai','2023'],['Xandú Quaresma','Xandú Quaresma','2022'],['Clown','Palhaça','2024']]){
  translations[`${role} \u00a0 | \u00a0 Theatre \u00a0 | \u00a0 ${year}`]=`${portuguese} \u00a0 | \u00a0 Teatro \u00a0 | \u00a0 ${year}`;
 }
+Object.assign(translations,window.reviewTranslations||{});
 const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const entries=[];while(walker.nextNode()){const node=walker.currentNode;if(translations[node.textContent.trim()])entries.push({node,original:node.textContent,key:node.textContent.trim()})}
 const movementHeading=document.querySelector('.movement-feature h2');
 const movementHeadingEnglish=movementHeading?.innerHTML;
+const translatedAttributes=[];
+document.querySelectorAll('[data-label],[aria-label],img[alt],iframe[title]').forEach(element=>{
+ for(const name of ['data-label','aria-label','alt','title']){
+  const original=element.getAttribute(name);
+  if(original)translatedAttributes.push({element,name,original});
+ }
+});
+function attributePortuguese(text){
+ if(translations[text])return translations[text];
+ return text.replace(/^Enlarge /,'Ampliar ').replace(' — headshot in white',' — retrato de rosto em branco').replace(' — headshot',' — retrato de rosto').replace(' — theatre performance',' — apresentação teatral').replace(' — performance photograph',' — fotografia da apresentação').replace(' — stage photograph',' — fotografia de palco').replace(' — black and white portrait',' — retrato em preto e branco').replace(' — portrait in white',' — retrato em branco').replace(' — solo performance',' — apresentação solo').replace(' — ballet ensemble',' — corpo de baile').replace('Spanish dance costume — portrait','Figurino de dança espanhola — retrato').replace('Spanish dance — ballet performance','Dança espanhola — apresentação de ballet').replace('Ballet — black and white dance portrait','Ballet — retrato de dança em preto e branco');
+}
 const languageKey='bibiana-riet-language';
 function savedLanguage(){try{return localStorage.getItem(languageKey)==='pt'?'pt':'en'}catch{return 'en'}}
 function applyLanguage(language){
  const pt=language==='pt';
- entries.forEach(({node,original,key})=>node.textContent=pt?translations[key]:original);
+ entries.forEach(({node,original,key})=>node.textContent=pt?original.replace(key,translations[key]):original);
+ translatedAttributes.forEach(({element,name,original})=>element.setAttribute(name,pt?attributePortuguese(original):original));
  if(movementHeading)movementHeading.innerHTML=pt?'Reel de<br> Movimento':movementHeadingEnglish;
  document.documentElement.lang=pt?'pt-BR':'en';
  document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===language)));
