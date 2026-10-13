@@ -21,11 +21,14 @@ for(const [role,portuguese,year] of [['Neighbor & Father','Vizinha & Pai','2023'
  translations[`${role} \u00a0 | \u00a0 Theatre \u00a0 | \u00a0 ${year}`]=`${portuguese} \u00a0 | \u00a0 Teatro \u00a0 | \u00a0 ${year}`;
 }
 const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const entries=[];while(walker.nextNode()){const node=walker.currentNode;if(translations[node.textContent.trim()])entries.push({node,original:node.textContent,key:node.textContent.trim()})}
+const movementHeading=document.querySelector('.movement-feature h2');
+const movementHeadingEnglish=movementHeading?.innerHTML;
 const languageKey='bibiana-riet-language';
 function savedLanguage(){try{return localStorage.getItem(languageKey)==='pt'?'pt':'en'}catch{return 'en'}}
 function applyLanguage(language){
  const pt=language==='pt';
  entries.forEach(({node,original,key})=>node.textContent=pt?translations[key]:original);
+ if(movementHeading)movementHeading.innerHTML=pt?'Reel de<br> Movimento':movementHeadingEnglish;
  document.documentElement.lang=pt?'pt-BR':'en';
  document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===language)));
  document.dispatchEvent(new Event('languagechange'));
