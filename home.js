@@ -1,7 +1,7 @@
 const translations={
  'Home':'Início','Work':'Trabalhos','Reels':'Reels','Gallery':'Galeria','About':'Sobre','Resume':'Currículo','Contact':'Contato',
  'From real life':'Da vida real','to imagined worlds.':'a mundos imaginados.',
- 'View work':'Ver trabalhos','Watch reels':'Ver reels','Featured Work':'Trabalhos em destaque','Clowning Sketch':'Sketch de palhaçaria','View all work':'Ver todos os trabalhos',
+ 'View work':'Ver trabalhos','Watch reels':'Ver reels','Featured Work':'Trabalhos em destaque','Clowning Sketch':'Sketch de palhaçaria','View all work':'Ver mais trabalhos',
  'ACTING REEL':'REEL DE ATUAÇÃO','Selected scenes &':'Cenas selecionadas e','performances.':'performances.','View all reels':'Ver todos os reels',
  'ABOUT':'SOBRE','A Brazilian-Uruguayan actress, drawn to human stories.':'Uma atriz brasileira-uruguaia, atraída por histórias humanas.',
  'I’m drawn to characters with depth, contradiction and humanity — and to stories that let me explore different lives, perspectives and worlds.':'Sou atraída por personagens com profundidade, contradição e humanidade — e por histórias que me permitem explorar diferentes vidas, perspectivas e mundos.',
@@ -41,4 +41,5 @@ if(isHome&&navigation?.type==='reload')selectLanguage('en');else applyLanguage(s
 document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>selectLanguage(button.dataset.lang)));
 window.addEventListener('storage',event=>{if(event.key===languageKey)applyLanguage(savedLanguage())});
 window.addEventListener('pageshow',event=>{if(event.persisted)applyLanguage(savedLanguage())});
+
 
