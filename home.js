@@ -18,6 +18,7 @@ Object.assign(translations,{'← Back to work':'← Voltar aos trabalhos','THEAT
 Object.assign(translations,{'Neighbor & Father':'Vizinha & Pai','Clown':'Palhaça'});
 Object.assign(translations,{'Clowning Sketches':'Sketches de Palhaçaria','Party Guest & Spanish Dance':'Convidadas & Espanholas','Spanish Dance':'Espanholas'});
 Object.assign(translations,{'Acting for Camera':'Acting for Camera','5′3″':'159 cm'});
+Object.assign(translations,{'Clown Sketches':'Sketches de Palhaçaria','Neighbor / Father':'Vizinho / Pai','Clown / Solo & Ensemble':'Palhaça / Solo e Conjunto','Ballet Ensemble':'Corpo de Baile','Spanish dance | Ensemble':'Espanholas | Corpo de baile','Party Guest & Spanish Dance | Ensemble':'Convidados & Espanholas | Corpo de baile'});
 for(const [role,portuguese,year] of [['Neighbor & Father','Vizinha & Pai','2023'],['Xandú Quaresma','Xandú Quaresma','2022'],['Clown','Palhaça','2024']]){
  translations[`${role} \u00a0 | \u00a0 Theatre \u00a0 | \u00a0 ${year}`]=`${portuguese} \u00a0 | \u00a0 Teatro \u00a0 | \u00a0 ${year}`;
 }
