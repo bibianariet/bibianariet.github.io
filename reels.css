@@ -65,3 +65,5 @@
 /* Center descriptions under their own players and optically inset the acting label. */
 .reels-page .scene-grid article>p{width:100%;margin:0;text-align:center}
 .reels-page .acting-feature .acting-label{padding-left:8px}
+.reels-page .reels-feature .video,.reels-page .scene-grid .video{position:relative;margin-bottom:26px}
+.reels-page .youtube-direct{position:absolute;top:100%;right:0;padding-top:3px;font:12px/1.5 Montserrat,Arial,sans-serif;color:inherit;text-align:right;text-underline-offset:3px}
