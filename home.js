@@ -6,7 +6,7 @@ const translations={
  'ABOUT':'SOBRE','A Brazilian-Uruguayan actress, drawn to human stories.':'Uma atriz brasileira-uruguaia, atraída por histórias humanas.',
  'I’m drawn to characters with depth, contradiction and humanity — and to stories that let me explore different lives, perspectives and worlds.':'Sou atraída por personagens com profundidade, contradição e humanidade — e por histórias que me permitem explorar diferentes vidas, perspectivas e mundos.',
  'About me':'Sobre mim','Based in':'Localização','Languages':'Idiomas','Availability':'Disponibilidade','Portuguese · English · Spanish':'Português · Inglês · Espanhol','National & International Projects':'Projetos nacionais e internacionais',
- 'GALLERY':'GALERIA','A glimpse':'Um olhar','into my world.':'para o meu mundo.','Portraits, characters, movement':'Retratos, personagens, movimento','and moments in between.':'e momentos entre cenas.','View gallery':'Ver galeria',
+ 'GALLERY':'GALERIA','A glimpse':'Um vislumbre','into my world.':'do meu mundo.','Portraits, characters, movement':'Retratos, personagens, movimento','and moments in between.':'e momentos entre cenas.','View gallery':'Ver galeria',
  'CONTACT':'CONTATO','Let’s connect.':'Vamos conversar.','For casting, representation and professional enquiries.':'Para casting, representação e contatos profissionais.','View my profile':'Ver meu perfil','Good stories':'Boas histórias','find their people.':'encontram suas pessoas.'
 };
 Object.assign(translations,{'SELECTED PROJECTS':'PROJETOS SELECIONADOS','Selected work in theatre, dance and performance.':'Trabalhos selecionados em teatro, dança e performance.','Theatre, dance and performance.':'Teatro, dança e performance.','A selection of roles and projects across character,':'Uma seleção de personagens e projetos em teatro,','movement and live performance.':'movimento e performance ao vivo.','Show More':'Ver mais'});
@@ -36,3 +36,4 @@ if(isHome&&navigation?.type==='reload')selectLanguage('en');else applyLanguage(s
 document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>selectLanguage(button.dataset.lang)));
 window.addEventListener('storage',event=>{if(event.key===languageKey)applyLanguage(savedLanguage())});
 window.addEventListener('pageshow',event=>{if(event.persisted)applyLanguage(savedLanguage())});
+

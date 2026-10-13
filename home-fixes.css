@@ -8,3 +8,4 @@
 @media(max-width:850px){.home-page header{gap:12px}.home-page nav{margin-left:0}.home-page .languages{margin-left:12px}.home-page .hero .button{display:flex}}
 .home-page .languages button[data-lang="en"][aria-pressed="true"]{border-radius:25px 0 0 25px}
 .home-page .languages button[data-lang="pt"][aria-pressed="true"]{border-radius:0 25px 25px 0}
+.home-gallery>div:first-child{min-width:0}.home-gallery h2{white-space:normal;overflow-wrap:normal;max-width:100%}
