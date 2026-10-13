@@ -1,0 +1,10 @@
+.home-page header{gap:0;justify-content:space-between}
+.home-page nav{margin-left:auto}
+.home-page .languages{margin-left:48px;flex-shrink:0}
+.button{display:inline-flex;align-items:center;justify-content:center;text-align:center}
+.home-page .button{display:inline-flex;align-items:center;justify-content:center;text-align:center}
+.home-page .featured>.wrap>.button{display:flex;width:255px}
+@media(min-width:851px) and (max-width:1500px){.home-page .languages{margin-left:32px}.home-page nav{gap:6px}.home-page nav a{padding-inline:10px}}
+@media(max-width:850px){.home-page header{gap:12px}.home-page nav{margin-left:0}.home-page .languages{margin-left:12px}.home-page .hero .button{display:flex}}
+.home-page .languages button[data-lang="en"][aria-pressed="true"]{border-radius:25px 0 0 25px}
+.home-page .languages button[data-lang="pt"][aria-pressed="true"]{border-radius:0 25px 25px 0}

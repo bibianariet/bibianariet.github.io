@@ -1,0 +1,1 @@
+const more=document.querySelector('#show-more');if(more)more.addEventListener('click',()=>{document.querySelector('#extra-project').hidden=false;more.setAttribute('aria-expanded','true');more.hidden=true;more.style.display='none'});

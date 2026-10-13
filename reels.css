@@ -1,0 +1,67 @@
+.reels-wrap{max-width:1290px;margin:auto;padding:45px 35px}
+.reels-intro,.selected-scenes{background:url('atmosphere.webp') center/cover}
+.reels-intro{text-align:center}.reels-intro .reels-wrap{padding-block:65px 70px}.reels-intro .eyebrow{font-size:15px;letter-spacing:5px;margin:0 0 35px}.reels-intro h1{font-size:90px;font-weight:500;margin:0 0 45px;line-height:1.1}.reels-intro p:last-child{font-size:22px;margin:0}
+.acting-feature{background:#591b06;color:#faf8f3}.movement-feature{background:#494d30;color:#faf8f3}
+.reels-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.28fr);gap:50px;align-items:center}
+.reels-feature .video{aspect-ratio:16/9;margin:0}.reels-feature .eyebrow{font-size:16px;letter-spacing:4px;margin:0 0 50px}.reels-page .reels-feature h2{font-size:70px;font-weight:500;line-height:1.25;margin:0 0 40px}.reels-feature p:last-child{font-size:22px;line-height:1.5;margin:0}
+.selected-scenes .reels-wrap{padding-block:40px 65px}.reels-page .selected-scenes h2{text-align:center;font-size:70px;font-weight:500;margin:0 0 12px}.scenes-description{text-align:center;font-size:21px;line-height:1.5;margin:0 auto 55px}
+.scene-grid{display:grid;grid-template-columns:400px 400px;justify-content:space-around;gap:70px;max-width:1100px;margin:auto}.scene-grid .video{margin:0 0 28px;aspect-ratio:16/9}.scene-grid h3{font-size:30px;font-weight:400;line-height:1.12;margin:0 25px 15px}.scene-grid article p{font-size:17px;line-height:1.35;margin:0 25px}
+@media(max-width:1100px) and (min-width:851px){.scene-grid{grid-template-columns:1fr 1fr;gap:60px}.reels-page .reels-feature h2{font-size:55px}.reels-feature p:last-child{font-size:18px}.reels-feature .eyebrow{font-size:12px;letter-spacing:3px}}
+@media(max-width:850px){.reels-wrap{padding:40px 24px}.reels-intro .reels-wrap{padding:40px 24px 45px}.reels-intro .eyebrow{font-size:10px;letter-spacing:2.5px;margin-bottom:20px}.reels-intro h1{font-size:55px;margin-bottom:24px}.reels-intro p:last-child{font-size:16px}.reels-feature{grid-template-columns:1fr;gap:28px}.reels-feature .eyebrow{font-size:10px;letter-spacing:2.5px;margin-bottom:20px}.reels-page .reels-feature h2{font-size:38px;margin-bottom:20px}.reels-feature p:last-child{font-size:16px}.movement-feature h2 br{display:none}.scene-grid{grid-template-columns:1fr;gap:35px;max-width:500px}.reels-page .selected-scenes h2{font-size:38px;margin-bottom:20px}.scenes-description{font-size:15px;margin-bottom:28px}.scene-grid h3{font-size:26px;margin:0 0 15px}.scene-grid article p{font-size:14px;margin:0}.scene-grid .video{margin-bottom:20px}.selected-scenes .reels-wrap{padding:40px 24px}}
+/* Consistent text rhythm and alignment with video frames. */
+.reels-feature{align-items:stretch;gap:48px}
+.reels-feature>div:first-child{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:12px 0}
+.reels-feature .eyebrow{margin:0 0 28px;line-height:1.5}
+.reels-page .reels-feature h2{margin:0 0 28px;line-height:1.15}
+.reels-feature p:last-child{line-height:1.55;max-width:480px}
+.reels-feature .video{align-self:center}
+.scene-grid{align-items:start}
+.scene-grid article{display:flex;flex-direction:column;min-width:0}
+.scene-grid h3{margin:0 0 16px;line-height:1.2;min-height:108px}
+.scene-grid article p{margin:0;line-height:1.55}
+.scenes-description{max-width:1100px;line-height:1.6;margin-bottom:42px}
+.reels-page .selected-scenes h2{margin-bottom:20px}
+@media(max-width:1100px) and (min-width:851px){.scene-grid h3{min-height:144px}}
+@media(max-width:850px){.reels-feature{gap:26px}.reels-feature>div:first-child{padding:0}.reels-feature .eyebrow{margin-bottom:18px}.reels-page .reels-feature h2{margin-bottom:18px}.scene-grid h3{min-height:0;margin-bottom:12px}.scenes-description{margin-bottom:28px}.reels-feature p:last-child{max-width:none}}
+/* Align the category label with the heading and video's top edge. */
+.acting-feature .reels-feature>div:first-child{justify-content:flex-start;padding:0;align-self:stretch}
+.acting-feature .reels-feature .eyebrow{margin:0 0 28px;padding:0;align-self:flex-start}
+.acting-feature .reels-feature .video{align-self:start}
+@media(min-width:851px){.acting-feature .reels-feature>div:first-child{padding-top:8px}.acting-feature .reels-feature h2{margin-top:20px}}
+/* Distribute the Acting Reel text across the height of its video. */
+@media(min-width:851px){
+ .acting-feature .reels-feature{align-items:stretch}
+ .acting-feature .reels-feature>div:first-child{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:18px 0}
+ .acting-feature .reels-feature .eyebrow{margin:0;width:100%;text-align:left;line-height:1.5}
+ .acting-feature .reels-feature h2{margin:0;width:100%;text-align:left;line-height:1.15}
+ .acting-feature .reels-feature>div:first-child>p:last-child{margin:0;width:100%;text-align:left;line-height:1.5}
+ .acting-feature .reels-feature .video{align-self:center}
+}
+@media(max-width:850px){
+ .acting-feature .reels-feature>div:first-child{display:grid;gap:24px;padding:0}
+ .acting-feature .reels-feature .eyebrow,.acting-feature .reels-feature h2,.acting-feature .reels-feature>div:first-child>p:last-child{margin:0;text-align:left}
+}
+/* Both feature sections share the same text alignment and spacing. */
+.acting-feature .reels-feature>div:first-child{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;align-self:stretch;padding:12px 0}
+.acting-feature .reels-feature .eyebrow{width:auto;align-self:auto;margin:0 0 28px;padding:0;line-height:1.5;text-align:left}
+.reels-page .acting-feature .reels-feature h2{width:auto;margin:0 0 28px;line-height:1.15;text-align:left}
+.acting-feature .reels-feature>div:first-child>p:last-child{width:auto;max-width:480px;margin:0;line-height:1.55;text-align:left}
+.acting-feature .reels-feature .video{align-self:center}
+@media(max-width:850px){.acting-feature .reels-feature>div:first-child{padding:0}.acting-feature .reels-feature .eyebrow,.reels-page .acting-feature .reels-feature h2{margin-bottom:18px}.acting-feature .reels-feature>div:first-child>p:last-child{max-width:none}}
+/* A shared text edge without changing the section's outer spacing. */
+.reels-page .acting-feature .reels-feature>div:first-child{align-items:stretch;text-align:left}
+.reels-page .acting-feature .reels-feature>div:first-child>.eyebrow,
+.reels-page .acting-feature .reels-feature>div:first-child>h2,
+.reels-page .acting-feature .reels-feature>div:first-child>p:last-child{width:100%;max-width:none;padding-left:0;padding-right:0;margin-left:0;margin-right:0;align-self:stretch;text-align:left;text-indent:0;transform:none}
+/* Anchor every Acting Reel text line to one shared left edge. */
+.reels-page .acting-feature .reels-feature>div:first-child{display:block;text-align:left}
+.reels-page .acting-feature .reels-feature>div:first-child>.eyebrow,
+.reels-page .acting-feature .reels-feature>div:first-child>h2,
+.reels-page .acting-feature .reels-feature>div:first-child>p:last-child{display:block;position:relative;left:0;margin-left:0!important;margin-right:0!important;padding-left:0!important;padding-right:0!important;text-align:left!important;text-indent:0!important}
+.reels-page .acting-feature .reels-feature>div:first-child{align-content:center}
+.reels-page .acting-feature .acting-label{display:block;width:100%;margin:0 0 28px;padding:0;font:500 16px/1.5 Montserrat,Arial,sans-serif;letter-spacing:4px;text-align:left;text-indent:0}
+.reels-page .acting-feature .acting-label::before,.reels-page .acting-feature .acting-label::after{content:none}
+@media(max-width:850px){.reels-page .acting-feature .acting-label{font-size:10px;letter-spacing:2.5px;margin-bottom:18px}}
+/* Center descriptions under their own players and optically inset the acting label. */
+.reels-page .scene-grid article>p{width:100%;margin:0;text-align:center}
+.reels-page .acting-feature .acting-label{padding-left:8px}

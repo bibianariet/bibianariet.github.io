@@ -1,0 +1,9 @@
+.work-hero{height:auto;min-height:320px;background:url('atmosphere.webp') center/cover}
+.work-hero:before,.work-hero:after{display:none}
+.work-hero-inner{display:block;position:relative;max-width:1230px;height:auto;margin:auto;padding:60px 35px 65px}
+.work-hero-inner>div{position:static;width:100%;padding:0}
+.work-hero .eyebrow{font-size:12px;letter-spacing:4px;margin:0 0 20px}
+.work-hero h1{font-size:68px;line-height:1.1;font-weight:500;margin:0 0 24px}
+.work-hero p:not(.eyebrow){font-size:19px;line-height:1.6;margin:0;max-width:650px}
+@media(max-width:850px){.work-hero{min-height:0}.work-hero-inner{padding:40px 24px 45px}.work-hero .eyebrow{font-size:10px;letter-spacing:2.5px;margin-bottom:18px}.work-hero h1{font-size:50px;margin-bottom:20px}.work-hero p:not(.eyebrow){font-size:16px}}
+.work-hero-inner{text-align:center}.work-hero p:not(.eyebrow){margin-inline:auto}
