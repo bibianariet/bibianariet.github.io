@@ -1,0 +1,21 @@
+.home-page .reel-band h2{margin-bottom:26px}
+.home-page .reel-band .clip-description{font-size:18px;line-height:1.55;margin:0 0 30px;max-width:480px}
+@media(max-width:850px){.home-page .reel-band .clip-description{font-size:16px;margin-bottom:24px}}
+.home-page .reel-band .reel-split{align-items:stretch}
+.home-page .reel-band .reel-split>div:last-child{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:24px;padding:6px 0}
+.home-page .reel-band .reel-split>div:last-child>.eyebrow,
+.home-page .reel-band .reel-split>div:last-child>h2,
+.home-page .reel-band .reel-split>div:last-child>.clip-description,
+.home-page .reel-band .reel-split>div:last-child>.button{margin:0}
+.home-page .reel-band .reel-split>.video{align-self:center}
+@media(max-width:850px){.home-page .reel-band .reel-split>div:last-child{justify-content:flex-start;gap:22px;padding:0}}
+.scene-carousel.is-ready{display:grid;grid-template-columns:56px minmax(0,760px) 56px;justify-content:center;align-items:center;gap:22px}
+.scene-carousel.is-ready .scene-grid{display:block;width:100%;max-width:none;margin:0;grid-column:2;grid-row:1}
+.scene-carousel.is-ready article[hidden]{display:none!important}
+.scene-carousel .scene-nav{width:52px;height:52px;padding:0;border:1px solid #494d3040;border-radius:50%;background:#1a1a1a90;color:#faf8f3;align-items:center;justify-content:center;display:flex}
+.scene-carousel .scene-nav[hidden]{display:none}
+.scene-nav svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5}
+.scene-prev svg{transform:rotate(180deg)}
+.scene-nav:hover{background:#494d30}.scene-prev{grid-column:1;grid-row:1}.scene-next{grid-column:3;grid-row:1}
+.scene-carousel .scene-position{grid-column:2;grid-row:2;text-align:center;font:12px Montserrat,Arial,sans-serif;letter-spacing:2px;margin:12px 0 0}
+@media(max-width:850px){.scene-carousel.is-ready{grid-template-columns:1fr 1fr;gap:18px}.scene-carousel.is-ready .scene-grid{grid-column:1/-1;grid-row:1}.scene-prev{grid-column:1;grid-row:2;justify-self:end}.scene-next{grid-column:2;grid-row:2;justify-self:start}.scene-carousel .scene-position{grid-column:1/-1;grid-row:3;margin:0}.scene-carousel .scene-nav{width:46px;height:46px}}

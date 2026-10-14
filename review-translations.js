@@ -1,4 +1,7 @@
 window.reviewTranslations={
+ "Acting Clip":"Cena de atuação",
+ "ENGLISH · “London”":"INGLÊS · “London”",
+ "Bibiana Riet as Maya in “London”, performed in English.":"Bibiana Riet como Maya em “London”, em uma cena interpretada em inglês.",
   "João Pessoa, Paraíba, Brazil": "João Pessoa, Paraíba, Brasil",
   "PHONE / WHATSAPP": "TELEFONE / WHATSAPP",
   "Watch on YouTube ↗": "Assistir no YouTube ↗",
