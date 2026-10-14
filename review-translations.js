@@ -1,4 +1,7 @@
 window.reviewTranslations={
+ "Liceo II, Uruguay · 2015–2016":"Liceo II, Uruguai · 2015–2016",
+ "Clowning Sketches — solo performance":"Sketches de Palhaçaria — apresentação solo",
+ "Enlarge Clowning Sketches — solo performance":"Ampliar Sketches de Palhaçaria — apresentação solo",
  "159 cm / 5′3″":"159 cm / 5′3″",
  "Ballet Ensemble":"Corpo de baile",
  "Acting Clip":"Cena de atuação",
