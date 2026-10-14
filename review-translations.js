@@ -1,4 +1,6 @@
 window.reviewTranslations={
+ "159 cm / 5′3″":"159 cm / 5′3″",
+ "Ballet Ensemble":"Corpo de baile",
  "Acting Clip":"Cena de atuação",
  "ENGLISH · “London”":"INGLÊS · “London”",
  "Bibiana Riet as Maya in “London”, performed in English.":"Bibiana Riet como Maya em “London”, em uma cena interpretada em inglês.",
@@ -18,7 +20,7 @@ window.reviewTranslations={
   "Enlarge photograph": "Ampliar fotografia",
   "Project photographs": "Fotografias do projeto",
   "Dance / Performance": "Dança / Performance",
-  "Non-union": "Sem vínculo sindical",
+  "Non-Union": "Sem vínculo sindical",
   "Portuguese — Native": "Português — Nativo",
   "English — Fluent": "Inglês — Fluente",
   "Spanish — Fluent": "Espanhol — Fluente",
