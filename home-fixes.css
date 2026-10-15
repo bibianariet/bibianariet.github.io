@@ -17,3 +17,10 @@
 @media(max-width:850px){.home-gallery{grid-template-columns:minmax(0,1fr)}.home-page .hero .actions .button{padding:10px 8px}.home-page .home-contact>div>p:last-child{max-width:100%}}
 @media(max-width:380px){.home-page header .name{font-size:19px}.home-page header{gap:8px;padding-inline:16px}.home-page .languages{margin-left:4px}.home-page .languages button{padding-inline:10px}}
 .home-page .reel-band h2{white-space:normal}
+/* Alternate the Home sections after bringing the acting clip forward. */
+.home-page .reel-band{background:#f2eadf;color:#1a1a1a}
+.home-page .reel-band .button{color:#1a1a1a;border-color:#1a1a1a}
+.home-page .reel-band .button:hover{background:#494d30;color:#faf8f3;border-color:#494d30}
+.home-page .featured{background:#494d30;color:#faf8f3}
+.home-page .featured .button{color:#faf8f3;border-color:#faf8f3}
+.home-page .featured .button:hover{background:#f2eadf;color:#494d30;border-color:#f2eadf}
