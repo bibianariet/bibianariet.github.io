@@ -35,7 +35,17 @@ document.querySelectorAll('[data-label],[aria-label],img[alt],iframe[title]').fo
 });
 function attributePortuguese(text){
  if(translations[text])return translations[text];
- return text.replace(/^Enlarge /,'Ampliar ').replace(' — headshot in white',' — retrato de rosto em branco').replace(' — headshot',' — retrato de rosto').replace(' — theatre performance',' — apresentação teatral').replace(' — performance photograph',' — fotografia da apresentação').replace(' — stage photograph',' — fotografia de palco').replace(' — black and white portrait',' — retrato em preto e branco').replace(' — portrait in white',' — retrato em branco').replace(' — solo performance',' — apresentação solo').replace(' — ballet ensemble',' — corpo de baile').replace('Spanish dance costume — portrait','Figurino de dança espanhola — retrato').replace('Spanish dance — ballet performance','Dança espanhola — apresentação de ballet').replace('Ballet — black and white dance portrait','Ballet — retrato de dança em preto e branco');
+ if(text.startsWith('Enlarge '))return 'Ampliar '+attributePortuguese(text.slice(8));
+ let value=text;
+ for(const [english,portuguese] of Object.entries(translations)){
+  if(english==='Clowning Sketches'&&value.startsWith(english+' —'))value=portuguese+value.slice(english.length);
+ }
+ return value.replace(' — performance photograph',' — fotografia da apresentação')
+  .replace(' — theatre performance',' — apresentação teatral')
+  .replace(' — stage photograph',' — fotografia de palco')
+  .replace(' — solo performance',' — apresentação solo')
+  .replace(' — ballet ensemble',' — corpo de baile')
+  .replace(' — performance',' — apresentação');
 }
 const languageKey='bibiana-riet-language';
 function savedLanguage(){try{return localStorage.getItem(languageKey)==='pt'?'pt':'en'}catch{return 'en'}}
