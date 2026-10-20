@@ -23,6 +23,23 @@ for(const [role,portuguese,year] of [['Neighbor & Father','Vizinha & Pai','2023'
  translations[`${role} \u00a0 | \u00a0 Theatre \u00a0 | \u00a0 ${year}`]=`${portuguese} \u00a0 | \u00a0 Teatro \u00a0 | \u00a0 ${year}`;
 }
 Object.assign(translations,window.reviewTranslations||{});
+// English review aliases — 2026-10-19
+const englishReviewAliases={
+  "Alongside acting, Bibiana has experience writing adaptations and continues to develop her on-camera work while pursuing opportunities in Brazil and abroad.": "Alongside acting, Bibiana has experience in adaptation writing and continues to develop her work for camera while building toward opportunities in Brazil and internationally.",
+  "Projects in Brazil and abroad": "National & International Projects",
+  "Selected scenes from theatre productions and self-tapes.": "A selection of scenes from different works, including theatrical performances and self-tapes.",
+  "Selected scenes from theatre productions.": "Selected theatrical performance scenes.",
+  "Movement, dance and physical storytelling.": "Movement, dancing and physical storytelling.",
+  "Senhora dos Afogados is a theatre production in which I played Neighbor and Father. I also served as the production’s lead adaptation writer.": "Senhora dos Afogados is a theatre production in which I played the roles of Neighbor and Father. I also served as Lead Adaptation Writer, contributing to the adaptation of the work for this production.",
+  "A Capital Federal is a theatre production developed collectively from the original work of the same name. I played Eusébio and Benvinda. The available recording is from the 2023 performance.": "A Capital Federal is a theatre production collectively developed from the original work of the same name, in which I played the roles of Eusébio and Benvinda. The available recording is from the 2023 performance.",
+  "Clowning Sketches is a theatre performance built around a series of collectively created clowning scenes. I performed as a clown in a six-minute solo, a two-person scene and ensemble scenes.": "Clowning Sketches is a theatre performance built around a series of collectively created clowning scenes. I performed as a clown across the production, including a six-minute solo piece, a two-person scene, and ensemble work.",
+  "O Quebra-Nozes is a ballet production in which I performed as a Spanish Dancer and a Party Guest in the ballet ensemble.": "O Quebra-Nozes is a ballet production in which I performed as a Spanish Dancer and as a Party Guest as part of the ballet ensemble.",
+  "Director": "Direction",
+  "DIRECTOR": "DIRECTION",
+  "Lead adaptation writer": "Lead Adaptation Writer"
+};
+for(const [updated,original] of Object.entries(englishReviewAliases)){if(translations[original])translations[updated]=translations[original];}
+// End English review aliases
 const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const entries=[];while(walker.nextNode()){const node=walker.currentNode;if(translations[node.textContent.trim()])entries.push({node,original:node.textContent,key:node.textContent.trim()})}
 const movementHeading=document.querySelector('.movement-feature h2');
 const movementHeadingEnglish=movementHeading?.innerHTML;
