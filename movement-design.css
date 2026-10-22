@@ -1,0 +1,31 @@
+/* Approved Movement & Presence design — 2026-10-22. */
+body.about-page .about-movement{
+ position:relative;isolation:isolate;
+ background:radial-gradient(ellipse at 78% 47%,#ba795343 0,transparent 58%),linear-gradient(110deg,#4b1b0d 0%,#713a23 54%,#8b5337 100%);
+}
+body.about-page .about-movement:before{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.055;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.045' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Cpath fill='%23c9aa86' filter='url(%23n)' d='M0 0h240v240H0z'/%3E%3C/svg%3E");
+}
+body.about-page .about-movement .about-wrap{display:grid;grid-template-columns:45% 55%;align-items:center;min-height:640px;padding:56px 0 0;gap:0}
+body.about-page .movement-copy{width:100%;padding:0 0 56px}
+body.about-page .about-movement h2{font-size:clamp(50px,5.2vw,72px);line-height:1.16}
+body.about-page .movement-copy>p:not(.eyebrow){max-width:460px;font-size:19px;line-height:1.55;margin:26px 0}
+body.about-page .movement-copy .movement-skills{white-space:normal;font-size:12px!important;letter-spacing:.18em!important;line-height:1.8;margin:0;max-width:440px}
+body.about-page .movement-copy .button{margin-top:28px;min-width:0;padding:16px 24px;background:transparent;border:1px solid #faf8f3a6;color:#faf8f3}
+body.about-page .movement-copy .button:hover{background:#faf8f31a;border-color:#faf8f3}
+body.about-page .about-dancer{position:relative;right:auto;bottom:auto;width:112%;max-width:none;height:auto;margin-left:-6%;align-self:end;object-fit:contain;object-position:center bottom}
+@media(max-width:650px){
+ body.about-page .about-movement{background:radial-gradient(ellipse at 65% 40%,#c58b5b33,transparent 52%),linear-gradient(170deg,#4b1b0d,#78432b 57%,#542716)}
+ body.about-page .about-movement .about-wrap{display:grid;grid-template-columns:minmax(0,1fr);min-height:0;gap:0;padding:36px 0 40px}
+ body.about-page .movement-copy{display:contents}
+ body.about-page main .about-movement :is(h2,p){text-align:left!important;margin-inline:0}
+ body.about-page .movement-copy>.eyebrow:first-child{grid-row:1;font-size:11px;letter-spacing:.22em}
+ body.about-page .movement-copy>.fine-rule{grid-row:2;margin:16px 0 24px!important;width:54px}
+ body.about-page .about-movement h2{grid-row:3;font-size:42px;line-height:1.15}
+ body.about-page .about-dancer{grid-row:4;width:calc(100% + 24px);height:auto;margin:24px -12px 0;max-width:none}
+ body.about-page .movement-copy>p:not(.eyebrow){grid-row:5;font-size:17px;line-height:1.6;margin:24px 0 20px;max-width:none}
+ body.about-page .movement-copy>.movement-skills{grid-row:6;font-size:11px!important;line-height:1.9;letter-spacing:.14em!important}
+ body.about-page .movement-copy>.button{grid-row:7;justify-self:start;width:auto;max-width:100%;margin-top:24px;font-size:12px;padding:15px 20px}
+}
+
