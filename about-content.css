@@ -1,0 +1,2 @@
+/* Paragraph spacing for the approved expanded Home About copy. */
+body.home-page .home-about>div>p:not(.eyebrow)+p{margin-top:16px}
