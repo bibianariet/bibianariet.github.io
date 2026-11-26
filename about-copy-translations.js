@@ -31,6 +31,10 @@ Object.assign(window.reviewTranslations, {
   "Characters who live": "O que move",
   "in the in-between.": "uma personagem",
   "Dance and physical performance are part of my artistic vocabulary, offering another way to explore character, emotion and storytelling.": "Uso o movimento para explorar personagens, expressar emoções e contar histórias.",
-  "BALLET · CONTEMPORARY · PHYSICAL PERFORMANCE": "BALÉ · DANÇA CONTEMPORÂNEA · ATUAÇÃO FÍSICA",
+  "BALLET · CONTEMPORARY · PHYSICAL PERFORMANCE": "BALLET · DANÇA CONTEMPORÂNEA · ATUAÇÃO FÍSICA",
   "Watch movement reel →": "Ver reel de dança e movimento →"
+});
+Object.assign(window.reviewTranslations, {
+  "Bibiana Riet is a Brazilian–Uruguayan actress. She is drawn to character-driven drama, especially roles about women who keep fighting while wrestling with doubts they rarely let others see. She is completing a degree in psychology at the Federal University of Paraíba (UFPB), and her studies inform a question she brings to each role: What makes a character’s choices make sense to her, even when they surprise everyone else?": "Bibiana Riet se interessa por tramas intensas, especialmente histórias que exploram os conflitos internos de personagens que seguem em frente mesmo quando duvidam de si.",
+  "Bibiana’s stage experience spans drama, comedy, and movement-based performance. She is developing her work on camera.": "Está concluindo a graduação em Psicologia na UFPB. Ao preparar um papel, seus estudos a ajudam a entender por que as escolhas fazem sentido para a personagem."
 });
