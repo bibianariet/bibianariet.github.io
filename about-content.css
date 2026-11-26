@@ -1,2 +1,20 @@
 /* Paragraph spacing for the approved expanded Home About copy. */
 body.home-page .home-about>div>p:not(.eyebrow)+p{margin-top:16px}
+
+.about-offstage {
+  background: #f0e9df;
+  padding: clamp(36px, 6vw, 72px) 0;
+}
+.about-offstage h2 {
+  font-size: clamp(36px, 5vw, 54px);
+}
+.about-offstage p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.5;
+  max-width: 42rem;
+  margin: 0 0 1em;
+}
+.about-offstage p:last-child {
+  margin-bottom: 0;
+}
