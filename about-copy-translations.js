@@ -43,3 +43,7 @@ Object.assign(window.reviewTranslations, {
   "I’m drawn to intense stories about characters who keep going even when they doubt themselves.": "Gosto de tramas intensas que exploram os conflitos internos de personagens que seguem em frente mesmo quando duvidam de si.",
   "Studying psychology shapes how I prepare for a role. I look for what makes a character’s choices make sense to them.": "Meus estudos em Psicologia influenciam a forma como preparo um papel. Procuro entender por que as escolhas fazem sentido para a personagem."
 });
+Object.assign(window.reviewTranslations, {
+  "What I love most about acting is getting to see the world through someone else’s eyes.": "O que mais amo na atuação é ver o mundo pelos olhos de outra pessoa.",
+  "I’m drawn to characters with complicated inner lives, especially women who’ve had to find their strength along the way. I love working out what keeps them fighting, what makes them doubt themselves, and what they do when the choices in front of them ask more of them than they thought they had.": "Gosto de descobrir o que faz uma personagem seguir em frente, quando ela duvida de si e como reage diante de uma escolha difícil."
+});
