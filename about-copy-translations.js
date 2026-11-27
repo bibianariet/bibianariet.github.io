@@ -38,3 +38,8 @@ Object.assign(window.reviewTranslations, {
   "Bibiana Riet is a Brazilian–Uruguayan actress. She is drawn to character-driven drama, especially roles about women who keep fighting while wrestling with doubts they rarely let others see. She is completing a degree in psychology at the Federal University of Paraíba (UFPB), and her studies inform a question she brings to each role: What makes a character’s choices make sense to her, even when they surprise everyone else?": "Bibiana Riet se interessa por tramas intensas, especialmente histórias que exploram os conflitos internos de personagens que seguem em frente mesmo quando duvidam de si.",
   "Bibiana’s stage experience spans drama, comedy, and movement-based performance. She is developing her work on camera.": "Está concluindo a graduação em Psicologia na UFPB. Ao preparar um papel, seus estudos a ajudam a entender por que as escolhas fazem sentido para a personagem."
 });
+Object.assign(window.reviewTranslations, {
+  "A Brazilian–Uruguayan actress drawn to character-driven drama.": "Atriz brasileira-uruguaia com foco em drama.",
+  "I’m drawn to intense stories about characters who keep going even when they doubt themselves.": "Gosto de tramas intensas que exploram os conflitos internos de personagens que seguem em frente mesmo quando duvidam de si.",
+  "Studying psychology shapes how I prepare for a role. I look for what makes a character’s choices make sense to them.": "Meus estudos em Psicologia influenciam a forma como preparo um papel. Procuro entender por que as escolhas fazem sentido para a personagem."
+});
